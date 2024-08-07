@@ -1,0 +1,109 @@
+.sectors{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    &__main__text{
+        color: black;
+        line-height: 45px;
+        font-size: 40px;
+        margin-bottom: 6px;
+        margin-top: 50px;
+    }
+    &__text{
+        font-weight: 400;
+        color: black;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    .sector{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #17002E;
+        width: 492.86px;
+        text-align: left;
+        height: 199px;
+        border-radius: 10px;
+        padding: 0px 30px;
+        margin-top: 20px;
+        &__logo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-top: 12px;
+        }
+        &__line{
+            width: 383.57px;
+            height: 2px;
+            background: white;
+            margin-top: 10px;
+        }
+       
+    }
+}
+
+@media (max-width: 1200px) {
+    .sectors {
+        &__main__text {
+            font-size: 36px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .sectors {
+        &__main__text {
+            font-size: 32px;
+            margin-top: 40px;
+        }
+
+        &__text {
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .sector {
+            width: calc(50% - 20px);
+            height: auto;
+            margin-top: 20px;
+
+            &__line {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sectors {
+        &__main__text {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        &__text {
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+
+        .sector {
+            width: calc(100% - 30px);
+            height: auto;
+            margin-top: 20px;
+            padding: 0 15px;
+
+            &__logo {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}

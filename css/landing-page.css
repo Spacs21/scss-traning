@@ -1,0 +1,101 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo img {
+  width: 60%;
+}
+.logo__main__text {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+.logo__text {
+  color: black;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.logo__buttons {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.logo__buttons button {
+  background: #6F2CFF;
+  width: 189px;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  color: white;
+  margin-right: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.logo__buttons button:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 0px 0px #6F2CFF;
+  width: 189px;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  color: #6F2CFF;
+}
+
+@media (max-width: 768px) {
+  .logo__main__text {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .logo__text {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .logo__buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .logo__buttons button {
+    margin-top: 10px;
+  }
+  .logo img {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .logo img {
+    width: 100%;
+  }
+  .logo__main__text {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .logo__text {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .logo__buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .logo__buttons button {
+    margin-top: 10px;
+  }
+  .logo__buttons button {
+    height: 50px;
+  }
+}
+html, body {
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}/*# sourceMappingURL=landing-page.css.map */
